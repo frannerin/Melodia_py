@@ -459,7 +459,7 @@ class GeometryParser:
                                                  torsion=0.0,
                                                  arc_len=0.0,
                                                  writhing=0.0,
-                                                 res_ann={},
+                                                 res_ann={"full_id": residue.get_full_id()},
                                                  custom=0.0)
             residues_map[pos] = num
 
