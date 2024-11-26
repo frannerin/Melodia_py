@@ -435,8 +435,8 @@ class GeometryParser:
             # Skip invalid residues
             res_type, model, chain_id, res_id = residue.get_full_id()
             het_flag, pos, insertion_code = res_id
-            if het_flag[0] != ' ':
-                continue
+            # if het_flag[0] != ' ':
+            #     continue
 
             if atom in residue:
                 coord = residue[atom].get_coord()
